@@ -9,6 +9,7 @@
 
 
 File yang dipake `server.js` yang diluar, bukan yang di dalem file `server`
+
 Untuk yang 3 terakhir bisa di search di google cara installnya saya lupa ada yang global ada yang enggak soalnya
 
 ** Make sure you use postgreSQL instead of mySQL for this code base.
