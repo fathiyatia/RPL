@@ -1,7 +1,11 @@
-# RPL
-Membuat project rpl woi
-# SCBMS
+# RPL - SCBMS
 Sport Center Booking Management System
 
-#Nyoba nge test duluuu
-yeyeye
+App.js : landing page nya
+Account.js : profile user sama aset
+Forgetpas.js : forget password
+Login.js : login
+Signup.js : sign up
+Home : navigasi bar sama tempat router
+
+install : tachyons, react router
