@@ -4,10 +4,17 @@ import Login from './Login';
 import Signup from './Signup';
 import Forgetpas from './Forgetpas';
 import Account from './Account';
+import Editprofile from './Editprofile';
+import Editasset from './Edittasset';
+import Tampilansewa from './Tampilansewa';
+import Cardpage from './CardPage';
+import Orderlist from './Orderlist';
+import Orderdet from './Orderdet';
+import Orderhis from './Orderhis';
+import Template from './Template';
 import './Home.css';
-
-
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+
 
 
 class Home extends Component{
@@ -22,7 +29,7 @@ class Home extends Component{
             <h5 class="logo my-0 mr-md-auto font-weight-normal">SCBMS</h5>
             <nav class="my-2 my-md-0 mr-md-3">
                 <Link class="menu p-2" to="/"><i class="fa fa-home"></i> &nbsp; Home &nbsp;</Link> 
-                <Link class="menu p-2" to="/login"><i class="fas fa-book-open"></i> &nbsp; Reservation &nbsp;</Link> 
+                <Link class="menu p-2" to="/orderhis"><i class="fas fa-book-open"></i> &nbsp; Reservation &nbsp;</Link> 
                 <Link class="menu p-2" to="/account"><i class="fas fa-user-circle"></i> &nbsp; Account &nbsp;</Link>
             </nav>
                 <Link class="btn btn-outline-primary" to="/signup">Sign up</Link>
@@ -34,6 +41,15 @@ class Home extends Component{
                 <Route path="/signup" component={Signup}/>
                 <Route path="/forgetpassword" component={Forgetpas}/>
                 <Route path="/account" component={Account}/>
+                <Route path="/editprofile" component={Editprofile}/>
+                <Route path="/editasset" component={Editasset}/>
+                <Route path="/tampilansewa" component={Tampilansewa}/>
+                <Route path="/cardpage" component={Cardpage}/>
+                <Route path="/orderlist" component={Orderlist}/>
+                <Route path="/orderdet" component={Orderdet}/>
+                <Route path="/orderhis" component={Orderhis}/>
+                <Route path="/template" component={Template}/>
+                
             </Fragment>
             </BrowserRouter>
         )

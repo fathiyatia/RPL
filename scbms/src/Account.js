@@ -23,16 +23,27 @@ class Account extends Component {
                 <div class="atas row">
                     <div class="col-md-9">
                         <div class="profile-head">
-                                    <div>
-                                    <div class="editbtn">
-                                    <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-                                    </div>
-                                    <h4>
-                                        My Profile
-                                    </h4>
+                            <div class="grid-conta">
+                            <div class="grid-it"> 
+                                    <h4>My Profile</h4>
                                     <br/>
-                    
+                            </div>
+
+                            <div class="grid-it">
+                                    <div class="editbtn">
+                                    <Link to="/editprofile"><input type="submit" class="profile-edit-btn" name="btnAddMore" value="Order History"/></Link>
                                     </div>
+                            </div>
+                            
+                            <div class="grid-it">
+                                    <div class="editbtn">
+                                    <Link to="/editprofile"><input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/></Link>
+                                    </div>
+                            </div>    
+                            
+                            </div>
+
+
                                     <ul class="nav nav-tabs"></ul>
                         </div>
                     </div>
@@ -47,7 +58,7 @@ class Account extends Component {
                             <div class="">
 
                                         <div class="profimg">
-                                            <img src={Profimg} alt="Photo profile"/>
+                                            <img src={Profimg} alt="Profile"/>
                                             <div class="file-upload">
                                                 <label for="upload" class="file-upload__label">Change Photo</label>
                                                 <input id="upload" class="file-upload__input" type="file" name="file-upload"/>
@@ -95,16 +106,25 @@ class Account extends Component {
                 <div class="atas row">
                     <div class="col-md-9">
                         <div class="profile-head">
-                                    <div>
-                                    <div class="editbtn">
-                                    <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-                                    </div>
-                                    <h4>
-                                        My Asset
-                                    </h4>
-                                    <br/>
-                    
-                                    </div>
+                                            <div class="grid-conta">
+                                            <div class="grid-it"> 
+                                                    <h4>My Asset</h4>
+                                                    <br/>
+                                            </div>
+
+                                            <div class="grid-it">
+                                                    <div class="editbtn">
+                                                    <Link to="/orderlist"><input type="submit" class="profile-edit-btn" name="btnAddMore" value="Order List"/></Link>
+                                                    </div>
+                                            </div>
+                                            
+                                            <div class="grid-it">
+                                                    <div class="editbtn">
+                                                    <Link to="/editasset"><input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Asset"/></Link>
+                                                    </div>
+                                            </div>    
+                                            
+                                            </div>
                                     <ul class="nav nav-tabs"></ul>
                         </div>
                     </div>
@@ -119,7 +139,7 @@ class Account extends Component {
                             <div class="">
 
                                         <div class="assetimg">
-                                            <img src={Gymnas} alt="Photo Asset"/>
+                                            <img src={Gymnas} alt="Asset"/>
                                             <div class="file-upload">
                                                 <label for="upload" class="file-upload__label">Change Photo</label>
                                                 <input id="upload" class="file-upload__input" type="file" name="file-upload"/>
@@ -161,7 +181,7 @@ class Account extends Component {
                                                 <label>No. Rekening 1</label>
                                             </div>
                                             <div class="isidata">
-                                                <p>BNI 563723 32323237</p>
+                                                <p>563723 32323237 (BNI) </p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -169,7 +189,7 @@ class Account extends Component {
                                                 <label>No. Rekening 2</label>
                                             </div>
                                             <div class="isidata">
-                                                <p>Mandiri 78723 32323 9037</p>
+                                                <p>78723 32323 9037 (Mandiri) </p>
                                             </div>
                                         </div>
                                         <div class="row">

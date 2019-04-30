@@ -1,0 +1,12 @@
+.editprof {
+    background-color: white;
+    padding : 3%;
+    border-radius: 10px; 
+    box-shadow:15px 20px 0px rgba(0,0,0,0.1);
+    padding-left: 5%;
+}
+
+.edit {
+    width: 80%;
+    padding-top: 2%;
+}

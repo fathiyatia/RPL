@@ -18,6 +18,12 @@
 
 
 
+.editbtn{
+    float: top;
+    padding: 5%;
+}
+
+
 .profile-head h5{
     color: #333;
 }
@@ -28,19 +34,14 @@
     border: none;
     border-radius: 1.5rem;
     width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left:15%;
-    padding-right: 15%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     font-weight: 600;
     color: #6c757d;
     cursor: pointer;
 }
 
 
-.editbtn{
-    float: right;
-}
 
 .atas{
     padding-left: 20%;
@@ -80,8 +81,9 @@
     width: 25%;
 }
 
-
-
+.profileisi{
+    margin: 2%;
+}
 
 
 
@@ -93,9 +95,6 @@
    
 }
 
-.profileisi{
-    margin: 2%;
-}
 
 .data{
     width: 30%;
@@ -137,3 +136,14 @@
     height: 100%;
     opacity: 0;
 }
+
+.grid-conta {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+
+   
+    
+  }
+  .grid-it {
+    text-align: left;
+  }

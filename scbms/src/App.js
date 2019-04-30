@@ -35,9 +35,9 @@ class App extends Component {
         <div class="dropdown">
         <button class="dropbutton">Looking for &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
                   <div class="dropdown-content">
-                            <Link class="lap" to="/login">Gymnasium</Link>
-                            <Link class="lap" to="/">Lapangan Basket</Link>
-                            <Link class="lap" to="/">Lapangan Futsal</Link>
+                            <Link class="lap" to="/Cardpage">Gymnasium</Link>
+                            <Link class="lap" to="/Orderdet">Lapangan Basket</Link>
+                            <Link class="lap" to="/Orderhis">Lapangan Futsal</Link>
                             <Link class="lap" to="/">Lapangan Badminton</Link>
                   </div>
         </div>
