@@ -24,7 +24,13 @@
     src: local('Kestoy Selfie Kestoy Selfie'), url('Kestoy Selfie.woff') format('woff');
     }
 
-.logo {
-        font-family: 'Kestoy Selfie Kestoy Selfie';
+.logo img {
+        
+        width: 150px;
+}
+
+
+.aa{
+    font-family: 'Kestoy Selfie Kestoy Selfie';
         font-size: 20px;
 }

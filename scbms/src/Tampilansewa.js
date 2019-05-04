@@ -10,6 +10,60 @@ import './material.min.css';
 import './material.css';
 import './material.min.css.map';
 
+function Tanggal1() {
+    var tempDate = new Date();
+    var date = tempDate.getDate() + '/' + (tempDate.getMonth()+1) + '/' + tempDate.getFullYear();
+    const currDate = date;
+    return (
+      <p>{currDate}</p>
+    );
+  }
+
+function Tanggal2() {
+var tempDate = new Date();
+var date = (tempDate.getDate()+1) + '/' + (tempDate.getMonth()+1) + '/' + tempDate.getFullYear();
+const currDate = date;
+return (
+    <p>{currDate}</p>
+);
+}
+
+function Tanggal3() {
+    var tempDate = new Date();
+    var date = (tempDate.getDate()+2) + '/' + (tempDate.getMonth()+1) + '/' + tempDate.getFullYear();
+    const currDate = date;
+    return (
+        <p>{currDate}</p>
+    );
+    }
+
+function Tanggal4() {
+    var tempDate = new Date();
+    var date = (tempDate.getDate()+3) + '/' + (tempDate.getMonth()+1) + '/' + tempDate.getFullYear();
+    const currDate = date;
+    return (
+        <p>{currDate}</p>
+    );
+    }
+
+
+function Tanggal5() {
+    var tempDate = new Date();
+    var date = (tempDate.getDate()+4) + '/' + (tempDate.getMonth()+1) + '/' + tempDate.getFullYear();
+    const currDate = date;
+    return (
+        <p>{currDate}</p>
+    );
+    }
+    
+
+
+const Clockbtn = (props) =>{
+    return (
+        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">08.00</button></div>    
+    );
+}
+
 
 class Tampilansewa extends Component {
   render() {
@@ -23,6 +77,11 @@ class Tampilansewa extends Component {
                 <link rel="stylesheet" href="./material.min.css"/>
                 <script src="./material.min.js"></script>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+
+                <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+                <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+                <script src="https://npmcdn.com/babel-transform-in-browser@6.4.6/dist/btib.min.js"></script>
+
                 </head>
 
 	                <div class="editprof mw8 center w-100">
@@ -71,30 +130,30 @@ class Tampilansewa extends Component {
                     <div class="menusewa">
                     <Tabs>
                     <TabList class="tabtab">
-                        <Tab>1 Mei</Tab>
-                        <Tab>2 Mei</Tab>
-                        <Tab>3 Mei</Tab>
-                        <Tab>4 Mei</Tab>
-                        <Tab>5 Mei</Tab>
+                        <Tab><Tanggal1/></Tab>
+                        <Tab><Tanggal2/></Tab>
+                        <Tab><Tanggal3/></Tab>
+                        <Tab><Tanggal4/></Tab>
+                        <Tab><Tanggal5/></Tab>
                     </TabList>
                 
                     <TabPanel>
                         <div class="grid-container">
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">08.00</button></div>
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">10.00</button></div>
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">13.00</button></div>  
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">15.00</button></div>
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">17.00</button></div>
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">20.00</button></div>  
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">21.00</button></div>
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">22.00</button></div>
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">23.00</button></div>
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">00.00</button></div>
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">02.00</button></div>  
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">04.00</button></div> 
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">05.00</button></div> 
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">06.00</button></div> 
-                        <div class="grid-item"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--cyan">07.00</button></div> 
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
+                        <Clockbtn/>
                         </div>
 
 

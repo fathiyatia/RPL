@@ -3,6 +3,50 @@ import './Orderdet.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
 
+
+const Gabayar = (props) =>{
+    return (
+        <div>
+        <br/>
+        <div class="row">
+            <div class="">
+                <label>Rekening Pembayaran : </label>
+                <ul>
+                <li>BNI 02345 432112</li>
+                <li>BCA 782945 423982</li>
+                <li>Mandiri 77638 372338</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="row">
+            <div class="">
+            <button type="button" class="btn btn-info">Upload bukti</button> <button type="button" class="btn btn-danger">Cancel Order</button>
+            </div>
+            
+        </div>
+        </div>
+
+                    
+    );
+}
+
+const Bayar = (props) =>{
+    return (
+                    <div>
+                        <div class="row">
+                        <div class="">
+                        <button type="button" class="btn btn-info">Cetak bukti</button> <button type="button" class="btn btn-danger">Pindah tangan</button>
+                        </div>
+                        </div>
+               
+                    </div>
+    );
+}
+
 class Orderdet extends Component {
   render() {
     return (
@@ -76,45 +120,7 @@ class Orderdet extends Component {
 
 
                                         <br/>        
-                                        <div class="row">
-                                            <div class="">
-                                            <button type="button" class="btn btn-info">Cetak bukti</button> <button type="button" class="btn btn-danger">Pindah tangan</button>
-                                            </div>
-                                            
-                                        </div>
-
-
-                                        <br/>
-
-                                        <div class="row">
-                                            <div class="">
-                                                <label>Rekening Pembayaran : </label>
-                                                <ul>
-                                                <li>BNI 02345 432112</li>
-                                                <li>BCA 782945 423982</li>
-                                                <li>Mandiri 77638 372338</li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-
-                                        <br/>
-
-                                        <div class="row">
-                                            <div class="">
-                                            <button type="button" class="btn btn-info">Upload bukti</button> <button type="button" class="btn btn-danger">Cancel Order</button>
-                                            </div>
-                                            
-                                        </div>
-
-
-                                       
-
-
-
-
-
-
+                                        <Bayar/>
 
                                         </div>
                                         </div>

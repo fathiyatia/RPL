@@ -7,11 +7,15 @@ import Account from './Account';
 import Editprofile from './Editprofile';
 import Editasset from './Edittasset';
 import Tampilansewa from './Tampilansewa';
-import Cardpage from './CardPage';
+import Cardgymnas from './Cardgymnas';
+import Cardbasket from './Cardbasket';
+import Cardfutsal from './Cardfutsal';
+import Cardbad from './Cardbad';
 import Orderlist from './Orderlist';
 import Orderdet from './Orderdet';
 import Orderhis from './Orderhis';
-import Template from './Template';
+import Konfirm from './Konfirmasi';
+import Logoscbms from './logoscbms.png';
 import './Home.css';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
@@ -26,7 +30,7 @@ class Home extends Component{
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
   
             <div class="mw8 center w-100 d-flex flex-column flex-md-row align-items-center p-2 px-md-4 mb-3 bg-white box-shadow">
-            <h5 class="logo my-0 mr-md-auto font-weight-normal">SCBMS</h5>
+            <h5 class="logo my-0 mr-md-auto font-weight-normal"><img src={Logoscbms} alt="Asset"/></h5>
             <nav class="my-2 my-md-0 mr-md-3">
                 <Link class="menu p-2" to="/"><i class="fa fa-home"></i> &nbsp; Home &nbsp;</Link> 
                 <Link class="menu p-2" to="/orderhis"><i class="fas fa-book-open"></i> &nbsp; Reservation &nbsp;</Link> 
@@ -44,11 +48,16 @@ class Home extends Component{
                 <Route path="/editprofile" component={Editprofile}/>
                 <Route path="/editasset" component={Editasset}/>
                 <Route path="/tampilansewa" component={Tampilansewa}/>
-                <Route path="/cardpage" component={Cardpage}/>
+                <Route path="/cardgymnas" component={Cardgymnas}/>
+                <Route path="/cardbasket" component={Cardbasket}/>
+                <Route path="/cardfutsal" component={Cardfutsal}/>
+                <Route path="/cardbad" component={Cardbad}/>
                 <Route path="/orderlist" component={Orderlist}/>
                 <Route path="/orderdet" component={Orderdet}/>
                 <Route path="/orderhis" component={Orderhis}/>
-                <Route path="/template" component={Template}/>
+                <Route path="/konfirmasi" component={Konfirm}/>
+                
+                
                 
             </Fragment>
             </BrowserRouter>
