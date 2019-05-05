@@ -1,0 +1,55 @@
+.buatgambar{
+    float: left;
+    width: 30%;
+}
+
+.buatgambar img {
+    width: 100%;
+
+}
+
+
+.buatdeskripsi {
+    padding-top: 2%;
+  
+}
+.des1 {
+    width: 45%;
+    padding-left: 8%;
+}
+
+.des2 {
+    width: 55%;
+    
+}
+
+
+
+.profileasset {
+    height: 50%;
+    
+    float: inline-start;
+}
+
+
+.menusewa {
+    height: 50%;
+    width: 100%;
+  
+    padding-top: 8%;
+  
+    
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+
+    padding: 4px;
+    font-size: 30px;
+    text-align: left;
+  }
