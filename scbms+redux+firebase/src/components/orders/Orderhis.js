@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Orderhis.css';
 import {Link} from 'react-router-dom';
-import Gymnas from './gymnas.jpg';
-import Prof from './homepage1.jpg';
+import Gymnas from '../photo/gymnas.jpg';
+import Prof from '../photo/homepage1.jpg';
 
 
 class Tampilansewa extends Component {

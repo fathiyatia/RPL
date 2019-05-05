@@ -1,11 +1,11 @@
 //INI TEMPLATE SIGN IN
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from '../../../src/logo.svg';
 import './Account.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
-import Profimg from './profimg.jpg';
-import Gymnas from './gymnas.jpg';
+import Profimg from '../photo/profimg.jpg';
+import Gymnas from '../photo/gymnas.jpg';
 
 
 const Profasset = (props) =>{

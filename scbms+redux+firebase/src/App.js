@@ -7,19 +7,19 @@ import CreateProject from './components/projects/CreateProject'
 
 import React, {Component, Fragment} from 'react';
 import Home from './components/dashboard/Home';
-import Login from './components/siginup/Login';
-import Signup from './components/siginup/Signup';
-import Forgetpas from './components/siginup/Forgetpas';
+import Login from './components/signinup/Login';
+import Signup from './components/signinup/Signup';
+import Forgetpas from './components/signinup/Forgetpas';
 import Account from './components/account/Account';
 import Editprofile from './components/account/Editprofile';
-import Editasset from './components/accountEdittasset';
-import Tampilansewa from '.components/orders/Tampilansewa';
+import Editasset from './components/account/Edittasset';
+import Tampilansewa from './components/orders/Tampilansewa';
 import Cardgymnas from './components/cards/Cardgymnas';
 import Cardbasket from './components/cards/Cardbasket';
 import Cardfutsal from './components/cards/Cardfutsal';
 import Cardbad from './components/cards/Cardbad';
 import Orderlist from './components/orders/Orderlist';
-import Orderdet from '.components/orders/Orderdet';
+import Orderdet from './components/orders/Orderdet';
 import Orderhis from './components/orders/Orderhis';
 import Konfirm from './components/orders/Konfirmasi';
 import Rincian from './components/orders/Rincian';

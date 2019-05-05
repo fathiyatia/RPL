@@ -13,17 +13,17 @@
 
 .jd {
     color: rgb(77, 79, 153);
-    font-family: 'Kestoy Selfie Kestoy Selfie';
+    font-family: 'Kestoy Selfie';
     font-size: 58px;
     text-shadow: 4px 3px rgb(201, 196, 196);
 }
 
 
 @font-face {
-    font-family: 'Kestoy Selfie Kestoy Selfie';
+    font-family: 'Kestoy Selfie';
     font-style: normal;
     font-weight: normal;
-    src: local('Kestoy Selfie Kestoy Selfie'), url('./Kestoy\ Selfie.woff') format('woff');
+    src: local('Kestoy Selfie'), url('./Kestoy\ Selfie.woff') format('woff');
     }
 
 .judul{

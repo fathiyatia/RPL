@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Cardbasket.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './material.min.css';
-import './material.css';
-import './material.min.css.map';
+import '../material design/material.min.css';
+import '../material design/material.css';
+import '../material design/material.min.css.map';
 import Basket from '../photo/basket.jpg';
 import {Link} from 'react-router-dom';
 

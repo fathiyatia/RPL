@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from '../../../src/logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Tampilansewa.css';
 import {Link} from 'react-router-dom';
-import Gymnas from './gymnas.jpg';
+import Gymnas from '../photo/gymnas.jpg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
-import './material.min.css';
-import './material.css';
-import './material.min.css.map';
+import '../material design/material.min.css';
+import '../material design/material.css';
+import '../material design/material.min.css.map';
 
 function Tanggal1() {
     var tempDate = new Date();

@@ -1,9 +1,11 @@
 //INI TEMPLATE SIGN IN
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './Signup.css';
+import logo from '../../../src/logo.svg';
+import './Login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
+
+
 
 class Login extends Component {
   render() {
@@ -13,16 +15,11 @@ class Login extends Component {
               <div class="container">
 	                <div class="row">
 		                <div class="col-md-4 login-sec">
-		                      <h2 class="text-center">Sign up</h2>
+		                      <h2 class="text-center">Log in</h2>
 		    
             
                           <form class="login-form">
-
-                              <div class="form-group">
-                                    <label for="exampleInputName" >Name</label>
-                                    <input type="text" class="form-control" placeholder="name"/>
-                              </div>
-
+                          
                               <div class="form-group">
                                     <label for="exampleInputEmail1" >Email</label>
                                     <input type="email" class="form-control" placeholder="email"/>
@@ -33,17 +30,17 @@ class Login extends Component {
                               </div>
                               
                               <div class="form-check">
-                                  <button type="submit" class="btn btn-login float-right">Submit</button>
+                                  <button type="submit" class="btn btn-login float-right" onClick={()=>{ alert('Maaf, login gagal, silahkan coba kembali!'); }}>Log in</button>
                               </div>
 
-                              <small>Sudah punya akun? <Link class="link blue dim" to="/login"> Log in</Link></small>
-                         
-                  
+                              <small>Belum punya akun? <Link class="link blue dim" to="/signup"> Daftar</Link></small>
+                              <br/>
+                              <small><Link class="b link black dim" to="/forgetpassword"> Forget Password</Link></small>
                               
                           </form>
 		              </div>
 
-                            <div class="col-md-8 banner-sec">
+                            <div class="col-md-8 banner">
                                     <div class="carousel-inner" role="listbox"></div>	   	    
 	                          </div>
               </div>

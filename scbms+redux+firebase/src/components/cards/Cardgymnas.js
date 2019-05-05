@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Cardgymnas.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './material.min.css';
-import './material.css';
-import './material.min.css.map';
+import '../material design/material.min.css';
+import '../material design/material.css';
+import '../material design/material.min.css.map';
 import Homee from '../photo/gymnas.jpg';
 import Home from '../photo/homepage1.jpg';
 import {Link} from 'react-router-dom';
