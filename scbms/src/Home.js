@@ -26,17 +26,17 @@ class Home extends Component{
         return(
             <BrowserRouter>
             <Fragment>
-            <div class="up">
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+            <div className="up">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous"/>
   
-            <div class="mw8 center w-100 d-flex flex-column flex-md-row align-items-center p-2 px-md-4 mb-3 bg-white box-shadow">
-            <h5 class="logo my-0 mr-md-auto font-weight-normal"><img src={Logoscbms} alt="Asset"/></h5>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <Link class="menu p-2" to="/"><i class="fa fa-home"></i> &nbsp; Home &nbsp;</Link> 
-                <Link class="menu p-2" to="/orderhis"><i class="fas fa-book-open"></i> &nbsp; Reservation &nbsp;</Link> 
-                <Link class="menu p-2" to="/account"><i class="fas fa-user-circle"></i> &nbsp; Account &nbsp;</Link>
+            <div className="mw8 center w-100 d-flex flex-column flex-md-row align-items-center p-2 px-md-4 mb-3 bg-white box-shadow">
+            <h5 className="logo my-0 mr-md-auto font-weight-normal"><img src={Logoscbms} alt="Asset"/></h5>
+            <nav className="my-2 my-md-0 mr-md-3">
+                <Link className="menu p-2" to="/"><i className="fa fa-home"></i> &nbsp; Home &nbsp;</Link> 
+                <Link className="menu p-2" to="/orderhis"><i className="fas fa-book-open"></i> &nbsp; Reservation &nbsp;</Link> 
+                <Link className="menu p-2" to="/account"><i className="fas fa-user-circle"></i> &nbsp; Account &nbsp;</Link>
             </nav>
-                <Link class="btn btn-outline-primary" to="/signup">Sign up</Link>
+                <Link className="btn btn-outline-primary" to="/signup">Sign up</Link>
             </div>
             </div>
 
