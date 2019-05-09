@@ -6,6 +6,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
 
 class Login extends Component {
+  state = {
+    email: '',
+    password: ''
+  }
+
+  handleChange = (evt) =>{
+    this.setState({
+      [evt.target.id]: evt.target.value
+    })
+  }
+
+  handleSubmit = (evt) =>{
+    evt.preventDefault();
+    console.log(this.state);
+  }
+
   render() {
     return (
       <div className="Login">
@@ -16,15 +32,15 @@ class Login extends Component {
 		                      <h2 class="text-center">Log in</h2>
 		    
             
-                          <form class="login-form">
+                          <form onSubmit={this.handleSubmit} class="login-form">
                           
                               <div class="form-group">
-                                    <label for="exampleInputEmail1" >Email</label>
-                                    <input type="email" class="form-control" placeholder="email"/>
+                                    <label htmlFor="email" >Email</label>
+                                    <input type="email" class="form-control" placeholder="email" id="email" onChange={this.handleChange}/>
                               </div>
                               <div class="form-group">
                                 <label for="exampleInputPassword1" >Password</label>
-                                <input type="password" class="form-control" placeholder="password"/>
+                                <input type="password" class="form-control" placeholder="password" id="password" onChange={this.handleChange} />
                               </div>
                               
                               <div class="form-check">
