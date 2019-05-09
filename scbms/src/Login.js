@@ -3,8 +3,53 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './Login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
+import { compose } from 'recompose';
 
+import { RegisterLink } from './Signup';
+import { withFirebase } from './Firebase';
+import App from './App';
+
+const LoginPage = () => (
+  <div>
+    <LoginForm />
+    <RegisterLink />
+  </div>
+);
+const INITIAL_STATE = {
+  email: '',
+  password: '',
+  error: null,
+};
+
+class LoginFormBase extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {...INITIAL_STATE};
+  }
+
+  onSubmit = event => {
+    const { email, password } = this.state;
+
+    this.props.firebase.auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        this.setState({ ...INITIAL_STATE });
+        this.props.history.push(App);
+      })
+      .catch(error => {
+        this.setState({ error });
+      });
+
+    event.preventDefault();
+  };
+
+  onChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
+
+<<<<<<< HEAD
 class Login extends Component {
   state = {
     email: '',
@@ -22,16 +67,23 @@ class Login extends Component {
     console.log(this.state);
   }
 
+=======
+>>>>>>> a845541bcb09bdb0e2bf095199c5463947bc0164
   render() {
+    const { email, password, error } = this.state;
+
+    const isInvalid = password === '' || email === '';
+
     return (
       <div className="Login">
-          <div class="login-block">
-              <div class="container">
-	                <div class="row">
-		                <div class="col-md-4 login-sec">
-		                      <h2 class="text-center">Log in</h2>
+          <div className="login-block">
+              <div className="container">
+	                <div className="row">
+		                <div className="col-md-4 login-sec">
+		                      <h2 className="text-center">Log in</h2>
 		    
             
+<<<<<<< HEAD
                           <form onSubmit={this.handleSubmit} class="login-form">
                           
                               <div class="form-group">
@@ -41,21 +93,33 @@ class Login extends Component {
                               <div class="form-group">
                                 <label for="exampleInputPassword1" >Password</label>
                                 <input type="password" class="form-control" placeholder="password" id="password" onChange={this.handleChange} />
+=======
+                          <form className="login-form" onSubmit={this.onSubmit}>
+                          
+                              <div className="form-group">
+                                    <label htmlFor="exampleInputEmail1" >Email</label>
+                                    <input type="email" className="form-control" placeholder="email" value = {email} name="email" onChange={this.onChange}/>
+                              </div>
+                              <div className="form-group">
+                                <label htmlFor="exampleInputPassword1" >Password</label>
+                                <input type="password" className="form-control" placeholder="password" value = {password} name="password" onChange={this.onChange}/>
+>>>>>>> a845541bcb09bdb0e2bf095199c5463947bc0164
                               </div>
                               
-                              <div class="form-check">
-                                  <button type="submit" class="btn btn-login float-right">Log in</button>
+                              <div className="form-check">
+                                  <button type="submit" className="btn btn-login float-right" disabled={isInvalid}>Log in</button>
                               </div>
 
-                              <small>Belum punya akun? <Link class="link blue dim" to="/signup"> Daftar</Link></small>
+                              <small>Belum punya akun? <Link className="link blue dim" to="/signup"> Daftar</Link></small>
                               <br/>
-                              <small><Link class="b link black dim" to="/forgetpassword"> Forget Password</Link></small>
+                              <small><Link className="b link black dim" to="/forgetpassword"> Forget Password</Link></small>
                               
+                              {error && <p>{error.message}</p>}
                           </form>
 		              </div>
 
-                            <div class="col-md-8 banner-sec">
-                                    <div class="carousel-inner" role="listbox"></div>	   	    
+                            <div className="col-md-8 banner">
+                                    <div className="carousel-inner" role="listbox"></div>	   	    
 	                          </div>
               </div>
             </div>
@@ -65,4 +129,11 @@ class Login extends Component {
   }
 }
 
-export default Login;
+const LoginForm = compose(
+  withRouter,
+  withFirebase,
+)(LoginFormBase);
+
+export default LoginPage;
+
+export { LoginForm };
