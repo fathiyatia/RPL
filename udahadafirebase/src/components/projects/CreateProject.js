@@ -6,8 +6,13 @@ import ImageUpload from '../imgupload/ImageUpload'
 
 class CreateProject extends Component {
   state = {
-    title: '',
-    content: ''
+    name: '',
+    category: '',
+    address:'',
+    photo:'',
+    price:'',
+    time:''
+
   }
   handleChange = (e) => {
     this.setState({
@@ -28,13 +33,25 @@ class CreateProject extends Component {
         <form className="white" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Create a New Asset</h5>
           <div className="input-field">
-            <input type="text" id='title' onChange={this.handleChange} />
-            <label htmlFor="title">Asset Title</label>
+            <input type="text" id='name' onChange={this.handleChange} />
+            <label htmlFor="title">Name</label>
           </div>
           <div className="input-field">
-            <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
-            <label htmlFor="content">Asset Content</label>
+            <textarea id="category" className="materialize-textarea" onChange={this.handleChange}></textarea>
+            <label htmlFor="content">Category</label>
           </div>
+          <div className="input-field">
+            <textarea id="address" className="materialize-textarea" onChange={this.handleChange}></textarea>
+            <label htmlFor="content">Address</label>
+          </div>
+          <div className="input-field">
+            <textarea id="price" className="materialize-textarea" onChange={this.handleChange}></textarea>
+            <label htmlFor="content">Price</label>
+          </div>
+          {/* <div className="input-field">
+            <textarea id="time" className="materialize-textarea" onChange={this.handleChange}></textarea>
+            <label htmlFor="content">Time</label>
+          </div> */}
           <div className="imageupload">
             <ImageUpload/>
           </div>

@@ -8,6 +8,7 @@ import SignUp from './components/auth/SignUp'
 import CreateProject from './components/projects/CreateProject'
 import Home from './components/dashboard/Home';
 import EditProject from './components/projects/EditProject'
+
 class App extends Component {
   render() {
     return (
