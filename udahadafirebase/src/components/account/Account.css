@@ -1,0 +1,92 @@
+.editbtn{
+float: right;
+}
+
+.profile-head h5{
+color: #333;
+}
+
+
+.profile-edit-btn{
+border: none;
+border-radius: 1.5rem;
+width: 100%;
+padding-top: 4%;
+padding-bottom: 4%;
+font-weight: 600;
+color: #6c757d;
+cursor: pointer;
+}
+
+
+.profimg img{
+width: 100%;   
+display: block;
+}
+
+.profimg {
+padding-bottom: 3%;
+margin-left: 12px;
+float: left;
+margin-top: 2%;
+width: 30%;
+
+}
+
+
+.deskripsi {
+    padding-top: 3%;
+    width:65%;
+    float: right;
+    padding-left: 30px;
+   
+    
+}
+
+.data{
+    width: 30%;
+    
+    
+}
+    
+.isidata{
+    width: 63%;
+    
+}
+    
+
+.assetimg img{
+width: 100%;   
+display: block;
+margin: auto;
+}
+
+.assetimg {
+padding-bottom: 3%;
+float: left;
+margin-top: 2%;
+width: 25%;
+}
+
+
+.grid-conta {
+display: grid;
+grid-template-columns: 60% 20% 20%;
+
+}
+
+.grid-it {
+text-align: left;
+}
+
+.akun{
+    padding: 90px;
+    color: rgb(109, 103, 103);
+    
+}
+
+.garis{
+    width: 960px;
+}
+
+

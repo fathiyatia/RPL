@@ -1,0 +1,29 @@
+
+.containergr {
+    display: grid;
+    grid-row-gap: 5px;
+    grid-template-columns: auto auto;
+}
+  
+.itemgr {
+    padding-right: 50px;
+    text-align: left;
+    
+}
+
+.his{
+    padding: 70px;
+    color: rgb(66, 63, 63);
+    
+}
+
+.histitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+.isihis {
+    font-size: 18px;
+}
+

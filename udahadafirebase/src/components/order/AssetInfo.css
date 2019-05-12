@@ -1,0 +1,90 @@
+.buatgambar{
+    float: left;
+    width: 30%;
+}
+
+.buatgambar img {
+    width: 100%;
+
+}
+
+
+.buatdeskripsi {
+    padding-top: 2%;
+  
+}
+.des1 {
+    width: 35%;
+    padding-left: 8%;
+}
+
+.des2 {
+    width: 65%;
+    
+}
+
+
+
+.profileasset {
+    height: 50%;
+    
+    float: inline-start;
+}
+
+
+.menusewa {
+    height: 50%;
+    width: 100%;
+  
+    padding-top: 8%;
+  
+    
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto ;
+    padding: 10px;
+  }
+  .grid-item {
+
+    padding: 4px;
+    padding-top: 25px;
+    text-align: left;
+
+  }
+
+.clkbtn{
+    font-size: 20px;
+    
+}
+
+.konfirmasi{
+    padding: 90px;
+    
+}
+
+.judulpes {
+    color: black;
+}
+
+.clk {
+    text-decoration: none;
+
+}
+
+.menu:hover{
+    text-decoration-line: none;
+    color: bisque;
+
+}
+
+.menu {
+    color: white;
+}
+
+
+.haha {
+    width: 100%;
+}
