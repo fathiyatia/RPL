@@ -8,6 +8,13 @@ import SignUp from './components/auth/SignUp'
 import CreateProject from './components/projects/CreateProject'
 import Home from './components/dashboard/Home';
 import EditProject from './components/projects/EditProject'
+import DetailAsset from './components/order/DetailAsset'
+import Account from './components/account/Account'
+import Editprofile from './components/account/Editprofile'
+import Konfirmasi from './components/order/Konfirmasi'
+import Orderdet from './components/order/OrderDet'
+import Orderlist from './components/order/OrderList'
+import Orderhislist from './components/order/Orderhislist'
 
 class App extends Component {
   render() {
@@ -23,6 +30,14 @@ class App extends Component {
             <Route path='/create' component={CreateProject} />
             <Route path='/home' component={Home} />
             <Route path='/edit' component={EditProject} />
+            <Route path='/detailasset' component={DetailAsset} />
+            <Route path='/account' component={Account} />
+            <Route path='/editprofile' component={Editprofile} />
+            <Route path='/konfirmasi' component={Konfirmasi} />
+            <Route path='/orderdet' component={Orderdet} />
+            <Route path='/orderlist' component={Orderlist} />
+            <Route path='/orderhislist' component={Orderhislist} />
+            
           </Switch>
         </div>
       </BrowserRouter>
