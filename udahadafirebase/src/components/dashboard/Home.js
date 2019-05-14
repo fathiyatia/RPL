@@ -18,6 +18,7 @@ class Home extends Component {
             
 
               <div className="judul mw8 center tl mt4 mt5-m mt6-l ph3">
+              <br/>
                 <div className="judulkiri tl">
                     <br/>
                     <br/>

@@ -21,7 +21,7 @@ export default class Dropdowns extends React.Component {
     return (
       <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret color="info">
-          Button Dropdown
+            Cari Apa Nih?&nbsp; &nbsp;
         </DropdownToggle>
         <DropdownMenu>
           <DropdownItem className="lap" to="/cardgymnas">Gymnasium</DropdownItem>

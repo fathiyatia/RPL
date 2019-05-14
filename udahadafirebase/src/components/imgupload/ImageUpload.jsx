@@ -9,18 +9,16 @@ class ImageUpload extends Component {
       url: '',
       progress: 0
     }
-    this.handleChange = this
-      .handleChange
-      .bind(this);
-      this.handleUpload = this.handleUpload.bind(this);
+    this.handleImgChange = this.handleImgChange.bind(this);
+    this.handleUpload = this.handleImgUpload.bind(this);
   }
-  handleChange = e => {
+  handleImgChange = e => {
     if (e.target.files[0]) {
       const image = e.target.files[0];
       this.setState(() => ({image}));
     }
   }
-  handleUpload = () => {
+  handleImgUpload = () => {
       const {image} = this.state;
       const uploadTask = storage.ref(`images/${image.name}`).put(image);
       uploadTask.on('state_changed', 
@@ -43,19 +41,20 @@ class ImageUpload extends Component {
   }
   render() {
     const style = {
-      height: '100vh',
       display: 'flex',
-      flexDirection: 'column',
+      flexDirection: 'column',                
       alignItems: 'center',
       justifyContent: 'center'
     };
     return (
       <div className="container">
-      <progress value={this.state.progress} max="100"/>
+      {/* <progress value={this.state.progress} max="100"/> */}
       <br/>
-        <input type="file" onChange={this.handleChange}/>
-        <button onClick={this.handleUpload}>Upload</button>
+        <input type="file" accept="image/*" onChange={this.handleImgChange}/>
         <br/>
+        <button onClick={this.handleImgUpload}>Upload</button>
+        <br/>
+        {/* <img src={this.state.url || 'http://via.placeholder.com/400x300'} alt="Uploaded images" height="300" width="400"/> */}
       </div>
     )
   }
